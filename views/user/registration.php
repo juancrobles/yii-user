@@ -95,6 +95,10 @@ $this->breadcrumbs=array(
 		<?php echo CHtml::submitButton(UserModule::t("Register")); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+    <div >
+        <?php $this->widget('application.modules.hybridauth.widgets.renderProviders'); ?>
+    </div>
+
+    <?php $this->endWidget(); ?>
 </div><!-- form -->
 <?php endif; ?>

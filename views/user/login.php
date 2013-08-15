@@ -48,7 +48,10 @@ $this->breadcrumbs=array(
 	<div class="row submit">
 		<?php echo CHtml::submitButton(UserModule::t("Login")); ?>
 	</div>
-	
+
+    <div >
+        <?php $this->widget('application.modules.hybridauth.widgets.renderProviders'); ?>
+    </div>
 <?php echo CHtml::endForm(); ?>
 </div><!-- form -->
 

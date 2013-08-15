@@ -54,3 +54,7 @@ $this->menu=array(
     	<td><?php echo CHtml::encode(User::itemAlias("UserStatus",$model->status)); ?></td>
 	</tr>
 </table>
+
+<div >
+    <?php $this->widget('application.modules.hybridauth.widgets.renderProviders'); ?>
+</div>
